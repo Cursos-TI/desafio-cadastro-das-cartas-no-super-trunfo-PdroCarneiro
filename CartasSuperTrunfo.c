@@ -13,7 +13,8 @@ int main() {
     float area1,area2;
     float pib1,pib2;
     int turismo1,turismo2;
-    
+    float dencidade,pibpercapita;
+//acrescentamos mais dua variveis
     // Cadastro das Cartas:
     // Solicite ao usuário que insira as informações de cada cidade, como o código, nome, população, área, etc.
 
@@ -32,7 +33,12 @@ int main() {
         printf("Área da cidade em M²: ");
         scanf("%f", &area1);
         printf("Quantos pontos turinsticos tem na cidade: ");
-        scanf("%d", &turismo1);;
+        scanf("%d", &turismo1);
+//sengunda parte do desafio que é calcular a densidade e o pib per capita
+             dencidade=populacao1/area1;
+             printf("Densidade Populacional: %.2f hab/km²", dencidade);
+             pibpercapita=pib1/populacao1;
+             printf("PIB per Capita: %.2f reais",pibpercapita);
     
 //imprimindo informações da primeira carta
             printf("Carta 1: \nEstado: %s \n",estado1);
@@ -68,6 +74,10 @@ int main() {
             printf("Área: %.2f \n",area2);
             printf("PIB: %.2f \n",pib2);
             printf("Número de pontos Turíscos: %d \n",turismo2);
+             dencidade=populacao2/area2;
+             printf("Densidade Populacional: %.2f hab/km²", dencidade);
+             pibpercapita=pib2/populacao2;
+             printf("PIB per Capita: %.2f reais",pibpercapita);
 
     return 0;
 }
