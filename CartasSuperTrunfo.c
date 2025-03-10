@@ -78,6 +78,25 @@ int main() {
              printf("Densidade Populacional: %.2f hab/km²", dencidade);
              pibpercapita=pib2/populacao2;
              printf("PIB per Capita: %.2f reais",pibpercapita);
+    //agora a soma dos atributos em uma variavel poder
+            poder1=(float)populacao1+area1+pib1+(float)turismo1+pibpercapita1+(1/densidade1);
+            poder2=(float)populacao2+area2+pib2+(float)turismo2+pibpercapita2+(1/densidade2);
+   // comparando as variaveis 
+resultado=poder1>poder2;
+printf("%.2f",resultado);
+resultado=populacao1>populacao2;
+printf("%.2f",resultado);
+resultado=area1>area2;
+printf("%.2f",resultado);
+resultado=pib1>pib2;
+printf("%.2f",resultado);
+resultado=(float)turismo1>(float)turismo2;
+printf("%.2f",resultado);
+resultado=pibpercapita1>pibpercapita2;
+printf("%.2f",resultado);
+resultado=(1/densidade1)<(1/densidade2);
+printf("%.2f",resultado);
+    return 0;
 
     return 0;
 }
