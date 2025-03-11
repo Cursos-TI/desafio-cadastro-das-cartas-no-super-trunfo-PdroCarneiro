@@ -82,21 +82,14 @@ int main() {
             poder1=(float)populacao1+area1+pib1+(float)turismo1+pibpercapita1+(1/densidade1);
             poder2=(float)populacao2+area2+pib2+(float)turismo2+pibpercapita2+(1/densidade2);
    // comparando as variaveis 
-resultado=poder1>poder2;
-printf("%.2f",resultado);
-resultado=populacao1>populacao2;
-printf("%.2f",resultado);
-resultado=area1>area2;
-printf("%.2f",resultado);
-resultado=pib1>pib2;
-printf("%.2f",resultado);
-resultado=(float)turismo1>(float)turismo2;
-printf("%.2f",resultado);
-resultado=pibpercapita1>pibpercapita2;
-printf("%.2f",resultado);
-resultado=(1/densidade1)<(1/densidade2);
-printf("%.2f",resultado);
-    return 0;
+if (poder1>poder2)
+{
+    printf("carta %s (%s): %.2d" nome1,codigo1,poder1);
+    printf("\n Resultado: Carta 1 (%s) venceu!",nome1);
+} else{
+    printf("carta %s (%s): %.2d" nome2,codigo2,poder2);
+    printf("\n Resultado: Carta 2 (%s) venceu!",nome2);
+}
 
     return 0;
 }
